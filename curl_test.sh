@@ -12,7 +12,7 @@ curl https://${2}/pw$1/index.php > pw${1}_${now}.html
 line=`cat pw${1}_${now}.html | wc -l`
 
 if [ $line -lt 260 ]; then
-	cat '[${now}] pw${1}  $line respond' >> $log
+	echo "[${now}] pw${1}  $line respond" >> $log
 	exit 1
 fi
 rm -f pw${1}_${now}.html

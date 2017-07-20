@@ -1,0 +1,2 @@
+*/5 * * * * /root/bimax_client_test/curl_test.sh 4 viettelidc.bimax.tv 
+*/5 * * * * /root/bimax_client_test/curl_test.sh 1 cdn.vnpt.bimax.tv 
