@@ -16,7 +16,7 @@ if [ $line -lt 260 ]; then
 	echo "[${now}] pw${1}  $line respond" >> $log
 	exit 1
 fi
-rm -f pw${1}_${now}.html
+rm -f $archive
 exit 0
  
 
