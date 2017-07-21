@@ -6,7 +6,7 @@ log=$PWD/client_curl.log
 # instance number of bimax
 # and domain
 
-now=`date +%H_%M`
+now=`date +%Y_%m_%d_%H_%M`
 archive=$PWD/pw${1}_${now}.html
 curl https://${2}/pw$1/index.php > $archive
 
