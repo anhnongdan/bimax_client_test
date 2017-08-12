@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-log=$PWD/client_curl.log
+log=/root/bimax_client_test/client_curl.log
 
 #this take 2 argument
 # instance number of bimax
 # and domain
 
 now=`date +%Y_%m_%d_%H_%M`
-archive=$PWD/pw${1}_${now}.html
+archive=/root/bimax_client_test/pw${1}_${now}.html
 curl https://${2}/pw$1/index.php > $archive
 
-line=`cat pw${1}_${now}.html | wc -l`
+line=`cat $archive | wc -l`
 
 if [ $line -lt 260 ]; then
 	echo "[${now}] pw${1}  $line respond" >> $log
